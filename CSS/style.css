@@ -1,0 +1,369 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	border: none;
+	outline: none;
+	font-weight: 300;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+p{
+	font-size: 2.5em;
+	line-height: 2em;
+	padding-left: 3%;
+	padding-bottom: 3%;
+}
+
+h2{
+	font-size: 3em;
+	font-weight: 700;
+	margin-left: 3%;
+	margin-top: 3%;
+	margin-bottom: 3.5%;
+}
+
+ul, li{
+	list-style: none;
+}
+
+/*MENU*/
+nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #691b99;
+}
+
+nav > a{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-family: serif;
+	font-size: 4em;
+	margin-bottom: 2%;
+}
+
+nav > ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+nav ul li{
+  text-align: center;
+  width: 100%;
+}
+
+nav ul li a{
+  display: inline-block;
+  padding: 10px 0;
+  width: 100%;
+  text-decoration: none;
+  color: #FFFFFF;
+	font-size: 3em;
+	margin-bottom: 3%;
+}
+
+/*Cabeçalho*/
+header{
+	width: 100%;
+	padding: 2%;
+	background-image: url("../images/dream.jpg");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	text-align: center;
+	color:#FFFFFF;
+}
+
+#cadastro{
+	width: 80%;
+	height: 30px;
+	background-color: rgba(31, 133, 149, 0.4);
+}
+
+#cadastro button{
+	width: 80%;
+	height: 25%;
+	font-size: 3em;
+	border-radius: 10px;
+	text-align: left;
+	padding: 2%;
+	margin-top: 3%;
+}
+
+#cadastro button i{
+	float: right;
+	color: #37006a;
+}
+
+#conteudo{
+		height: auto;
+		padding: 1%;
+		width: 100%;
+		display: flex;
+    flex-direction: column;
+}
+
+.caixa{
+	width: 100%;
+	background-color: #81738a;
+	color: #dfd7d7;
+	border-style: solid;
+	border-color: rgb(0, 0, 0, 0.4);
+	border-width: 1em;
+	margin-top: 1%;
+}
+
+.imagem{
+	width: 40vh;
+	height: 40vh;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 40vh;
+	text-align: center;
+	background-image: url("../images/imagemDream.jpg");
+	background-position: bottom;
+}
+
+.descricao p{
+	font-size: 2.5em;
+	text-align: center;
+}
+
+#Fotos{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+#Fotos img{
+  width: 95%;
+  margin-bottom: 2%;
+	border: solid black 0.4em;
+}
+
+#Fotos button{
+	width: 70%;
+	height: 10vh;
+	padding: 2%;
+	border-radius: 10PX;
+	text-align: left;
+	font-size: 3em;
+}
+
+#Fotos button I{
+	float: right;
+}
+
+footer a{
+	margin-right: 2%;
+	font-size: 9em;
+}
+
+@media only screen and (min-width: 600px){
+	/*Tablet*/
+	#cadastro{
+		margin-top: 2%;
+		width: 80%;
+		height: 45vh;
+		background-color: rgba(31, 133, 149, 0.4);
+	}
+
+	footer a{
+		margin-right: 0;
+		margin-left: 1.6%;
+		font-size: 8em;
+	}
+}
+
+@media only screen and (min-width: 767px){
+	#cadastro{
+		width: 80%;
+		height: 0vh;
+		background-color: rgba(31, 133, 149, 0.4);
+	}
+	
+	#cadastro button{
+		width: 80%;
+		height: 25%;
+		font-size: 3em;
+		border-radius: 10px;
+		text-align: left;
+		padding: 2%;
+		margin-top: 3%;
+	}
+	
+	#cadastro button i{
+		float: right;
+		color: #37006a;
+	}
+}
+@media (min-width: 320px) and (max-width: 2000px){
+	#cadastro{
+		width: 85%;
+		font-size: 1rem;
+		height: 500px;
+		background-color: rgba(31, 133, 149, 0.4);
+	}
+	
+	#cadastro button{
+		width: 80%;
+		height: 25%;
+		font-size: 3em;
+		border-radius: 10px;
+		text-align: left;
+		padding: 2%;
+		margin-top: 3%;
+	}
+
+	#Fotos button{
+		font-size: 1.8rem;
+
+	}
+
+	#iconsRedes{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	#iconsRedes a i{
+		margin-bottom: 50px;
+	}
+}
+@media only screen and (min-width: 1059px){
+	/*Para computador: */
+	a:hover{
+		cursor: pointer;
+	}
+	nav{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  nav ul{
+    flex-direction: row;
+    width: 70%;
+  }
+
+	nav a{
+		font-size: 2.2em;
+	}
+
+	nav ul li a{
+		display: inline-block;
+		padding: 10px 0;
+		width: 100%;
+		text-decoration: none;
+		color: #FFFFFF;
+		font-size: 2em;
+		margin-bottom: 3%;
+	}
+
+	header{
+		width: 100%;
+		padding: 2%;
+		background-image: url("../images/dream.jpg");
+		background-repeat: no-repeat;
+		background-position: top;
+		background-attachment: fixed;
+		min-height: 30vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		color:#FFFFFF;
+	}
+	 
+	#cadastro{
+		margin-top: 4%;
+		width: 50%;
+		height: 45vh;
+		background-color: rgba(31, 133, 149, 0.4);
+	}
+	
+	#cadastro button{
+		width: 60%;
+		height: 25%;
+		font-size: 1.8em;
+	}
+
+#conteudo{
+		height: auto;
+		padding: 1%;
+		width: 100%;
+		background-color: #bea6d5;
+		display: flex;
+		gap: 1.9%;
+    flex-direction: row;
+		flex-wrap: wrap;
+}
+
+.caixa{
+	width: 100%;
+	border-style: solid;
+	border-color: rgb(0, 0, 0, 0.4);
+	border-width: 1em;
+	margin-top: 1%;
+	margin-bottom: 3%;
+}
+
+.caixa p{ 
+	font-size: 2em;
+}
+
+#Fotos{
+	padding: 2%;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+#Fotos img{
+	height: 450px;
+	max-width: 33.3333333%;
+}
+
+#buttonDesejaSaberMais{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer a{
+	margin-right: 0;
+	margin-left: 8.4%;
+}
+
+#iconsRedes{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#iconsRedes a{
+	text-align: center;
+}
+	
+	/*Primary: #691b99
+	  Light: #9b4dcb
+		Dark: #37006a
+	*/
+
+}
